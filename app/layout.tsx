@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import Link from 'next/link'
+import { Github, Linkedin, Mail } from 'lucide-react'
+import PageTransitionWrapper from '../components/PageTransitionWrapper'
 
 export const metadata = {
   title: 'Ryder Lane - Personal Website',
@@ -10,25 +12,60 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="h-full">
       <body className="h-full m-0 p-0 flex flex-col">
-        {/* ✅ Clean, centered, styled header */}
-        <nav className="bg-blue-700 text-white px-8 py-5 shadow-md transition-all duration-500">
-          <div className="flex justify-between items-center max-w-6xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">Ryder Lane</h1>
-            <div className="flex gap-6 text-base sm:text-lg">
-              <Link href="/" className="hover:underline transition">About Me</Link>
-              <Link href="/resume" className="hover:underline transition">Resume</Link>
-              <Link href="/about" className="hover:underline transition">About This Site</Link>
-              <Link href="/contact" className="hover:underline transition">Contact</Link>
-            </div>
+        <nav className="bg-blue-600 text-white px-10 py-6 shadow-md">
+          <div className="max-w-6xl mx-auto flex items-center justify-between">
+            <h1 className="text-3xl font-bold tracking-wide">Ryder Lane</h1>
+            <div className="flex space-x-8 text-lg font-medium">
+         {['/', '/resume', '/about', '/contact'].map((path, i) => (
+         <Link
+            key={i}
+            href={path}
+           className="transform transition-transform duration-200 hover:scale-110 hover:text-blue-200"
+         >
+            {path === '/'
+              ? 'About Me'
+             : path === '/about'
+              ? 'About This Website'
+             : path.replace('/', '').replace(/^\w/, (c) => c.toUpperCase())}
+         </Link>
+        ))}
+</div>
           </div>
         </nav>
 
+        {/* Animate children using client wrapper */}
         <main className="flex-grow w-full">
-          {children}
+          <PageTransitionWrapper>{children}</PageTransitionWrapper>
         </main>
 
-        <footer className="bg-black text-white text-center p-4">
-          © {new Date().getFullYear()} Ryder Lane
+        <footer className="bg-black text-white text-center p-6">
+          <div className="flex justify-center space-x-6 mb-3">
+            <a
+              href="https://github.com/ryderlane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform"
+            >
+              <Github className="w-6 h-6 text-white" />
+            </a>
+            <a
+              href="https://linkedin.com/in/ryder-lane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform"
+            >
+              <Linkedin className="w-6 h-6 text-white" />
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=laneryder17@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform"
+            >
+              <Mail className="w-6 h-6 text-white" />
+            </a>
+          </div>
+          <p className="text-sm">© {new Date().getFullYear()} Ryder Lane</p>
         </footer>
       </body>
     </html>
