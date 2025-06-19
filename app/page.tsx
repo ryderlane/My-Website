@@ -21,7 +21,7 @@ export default function AboutMe() {
     'College Life': [
       { src: '/images/graduation.jpeg', alt: 'Graduation', caption: 'I graduated from Littlestown Senior High School, involved in many extracurriculars, top 10 in my class.' },
       { src: '/images/IMG_8609.jpeg', alt: 'Starting College', caption: 'This was the start of my journey at West Virginia University, where I’ve built lifelong friendships.' },
-      { src: '/images/momdadtail.jpeg', alt: 'mom and dad tailgate', caption: 'I’ve also enjoyed my fair share of tailgates at WVU' },
+      { src: '/images/momdadtail.jpeg', alt: 'mom and dad tailgate', caption: 'I've also enjoyed my fair share of tailgates at WVU' },
       { src: '/images/dad.jpeg', alt: 'dad tailgate', caption: '<--' },
       { src: '/images/field.jpeg', alt: 'field', caption: '<--' },
       { src: '/images/boys.jpeg', alt: 'ethan + nate', caption: '...and made some lifelong friends' },
@@ -101,8 +101,7 @@ export default function AboutMe() {
       >
         <h2 className="text-4xl font-bold mb-6 border-b-2 border-gray-300 pb-2">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          I am currently going into my 3rd year pursuing a Bachelor's of Science in Computer Science. I would consider myself a very analytical thinker, who loves dissecting problems, and eventually solving them. Beyond the CS world I enjoy spending time with my family (including my dog), playing video games, spending time with my friends and girlfriend, and traveling.
-        </p>
+          I am currently going into my 3rd year pursuing a Bachelor&apos;s of Science in Computer Science. I would consider myself a very analytical thinker, who loves dissecting problems, and eventually solving them. Beyond the CS world I enjoy spending time with my family (including my dog), playing video games, spending time with my friends and girlfriend, and traveling.</p>
       </motion.section>
 
       {/* Timeline Gallery */}
