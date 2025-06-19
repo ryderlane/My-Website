@@ -136,6 +136,7 @@ export default function AboutMe() {
                       <Image
                         src={current.src}
                         alt={current.alt}
+                        sizes="(max-width: 768px) 100vw, 720px"
                         fill
                         className="object-cover rounded-lg"
                       />
