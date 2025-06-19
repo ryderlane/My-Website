@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Link from 'next/link'
 import { Github, Linkedin, Mail } from 'lucide-react'
 import PageTransitionWrapper from '../components/PageTransitionWrapper'
-
+import { Analytics } from "@vercel/analytics/next"
 export const metadata = {
   title: 'Ryder Lane - Personal Website',
   description: 'Professional portfolio of Ryder Lane',
