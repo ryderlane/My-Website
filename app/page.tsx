@@ -21,7 +21,7 @@ export default function AboutMe() {
     'College Life': [
       { src: '/images/graduation.jpeg', alt: 'Graduation', caption: 'I graduated from Littlestown Senior High School, involved in many extracurriculars, top 10 in my class.' },
       { src: '/images/IMG_8609.jpeg', alt: 'Starting College', caption: 'This was the start of my journey at West Virginia University, where I’ve built lifelong friendships.' },
-      { src: '/images/momdadtail.jpeg', alt: 'mom and dad tailgate', caption: 'I've also enjoyed my fair share of tailgates at WVU' },
+      { src: '/images/momdadtail.jpeg', alt: 'mom and dad tailgate', caption: 'I&apos;ve also enjoyed my fair share of tailgates at WVU' },
       { src: '/images/dad.jpeg', alt: 'dad tailgate', caption: '<--' },
       { src: '/images/field.jpeg', alt: 'field', caption: '<--' },
       { src: '/images/boys.jpeg', alt: 'ethan + nate', caption: '...and made some lifelong friends' },
