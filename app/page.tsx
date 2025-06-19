@@ -13,13 +13,13 @@ export default function AboutMe() {
     'Family & Friends': [
       { src: '/images/IMG_3967_Original.JPEG', alt: 'Family Gathering', caption: 'My family has always wanted me to be the best version of myself. Pictured here is my brother, my mom, and my dad.' },
       { src: '/images/IMG_8449.JPG', alt: 'Friends at College', caption: 'My friends and family have always been my biggest supporters in life, especially during the tough times.' },
-      { src: '/images/IMG_4696.JPeG', alt: 'Brother + GPA', caption: 'Here is my brother and my Grandfather, who are two of my biggest inspirations in life.' },
+      { src: '/images/IMG_4696.jpeg', alt: 'Brother + GPA', caption: 'Here is my brother and my Grandfather, who are two of my biggest inspirations in life.' },
       { src: '/images/A&J-Wedding-363.jpg', alt: 'Wedding', caption: 'A special day celebrating family and love.' },
       { src: '/images/9CCD05C5-F9C6-47E7-8049-5253B2F6D693.JPEG', alt: 'Franklin', caption: 'My lovely girlfriend' },
       { src: '/images/momfrank.jpg', alt: 'Franklin', caption: '...And my best buddy, Franklin!' },
     ],
     'College Life': [
-      { src: '/images/graduation.jpeg', alt: 'Graduation', caption: 'I graduated from Littlestown Senior High School, involved in many extracurriculars, top 10 in my class.' },
+      { src: '/images/graduation.JPEG', alt: 'Graduation', caption: 'I graduated from Littlestown Senior High School, involved in many extracurriculars, top 10 in my class.' },
       { src: '/images/IMG_8609.jpeg', alt: 'Starting College', caption: 'This was the start of my journey at West Virginia University, where I’ve built lifelong friendships.' },
       { src: '/images/momdadtail.jpeg', alt: 'mom and dad tailgate', caption: 'I&apos;ve also enjoyed my fair share of tailgates at WVU' },
       { src: '/images/dad.jpeg', alt: 'dad tailgate', caption: '<--' },
