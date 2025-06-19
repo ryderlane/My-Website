@@ -21,7 +21,7 @@ export default function AboutPage() {
           <Server className="w-5 h-5 text-blue-600" /> Backend
         </h2>
         <p className="mb-2">
-          Although the current version of this site is frontend-only, it’s structured for backend integration using Node.js or serverless APIs via Next.js' server components.
+          Although the current version of this site is frontend-only, it&apos;s structured for backend integration using Node.js or serverless APIs via Next.js&apos; server components.
         </p>
       </section>
 
