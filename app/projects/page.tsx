@@ -60,14 +60,8 @@ export default function ProjectsPage() {
             <code>bot.py</code> — Discord&nbsp;py client, command routing, async
             event loop.
           </li>
-          <li>
-            <code>vision.py</code> — Google Vision wrapper for label
-            detection + confidence filtering.
-          </li>
-          <li>
-            <code>scraper.py</code> — Scrapfly helper to fetch product pages and
-            parse pricing JSON.
-          </li>
+          
+          
           <li>
             <code>.env</code> — API keys &amp; tokens (git-ignored for security).
           </li>
