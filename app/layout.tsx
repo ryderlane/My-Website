@@ -26,6 +26,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ? 'About Me'
              : path === '/about'
               ? 'About This Website'
+              : path === '/projects'
+              ? 'Projects'
              : path.replace('/', '').replace(/^\w/, (c) => c.toUpperCase())}
          </Link>
         ))}
