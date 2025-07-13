@@ -46,7 +46,8 @@ export default function ProjectsPage() {
 
         {/* Components */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
-          <Database className="w-5 h-5 text-blue-600" /> Tech&nbsp;Stack&nbsp;&amp;&nbsp;Files
+          <Database className="w-5 h-5 text-blue-600" />
+          Tech&nbsp;Stack&nbsp;&amp;&nbsp;Files
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
@@ -79,8 +80,6 @@ export default function ProjectsPage() {
           </Link>
         </div>
       </section>
-
-      {/* ─────────────── Future project cards can follow the same pattern ─────────────── */}
     </div>
   )
 }

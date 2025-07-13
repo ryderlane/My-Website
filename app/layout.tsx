@@ -69,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <p className="text-sm">© {new Date().getFullYear()} Ryder Lane</p>
         </footer>
+         <Analytics/>
       </body>
     </html>
   )
