@@ -50,13 +50,13 @@ export default function ProjectsPage() {
             <code>Next.js&nbsp;14</code>, <code>React</code>, <code>Tailwind</code>, <code>Leaflet</code> (map), NOAA APIs.
           </li>
           <li>
-            <code>/lib/noaa.ts</code> — Fetch + transform NOAA station/point forecasts.
+             Fetch + transform NOAA station/point forecasts.
           </li>
           <li>
-            <code>/components/SpotCard.tsx</code> — Saved spot preview with condition badges.
+             Saved spot preview with condition badges.
           </li>
           <li>
-            <code>/app/map/page.tsx</code> — Interactive map with pins &amp; popovers.
+             Interactive map with pins &amp; popovers.
           </li>
         </ul>
 
