@@ -1,6 +1,6 @@
 'use client'
 
-import { Bot, Image, Database, Github as GithubIcon, Map, Cloud, Cpu } from 'lucide-react'
+import { Bot, Image as ImageIcon, Database, Github as GithubIcon, Map, Cpu } from 'lucide-react'
 import Link from 'next/link'
 
 export default function ProjectsPage() {
@@ -22,7 +22,8 @@ export default function ProjectsPage() {
 
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
-          <Image className="w-5 h-5 text-blue-600" /> Core&nbsp;Features
+          <ImageIcon className="w-5 h-5 text-blue-600" />
+ Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
@@ -59,19 +60,7 @@ export default function ProjectsPage() {
           </li>
         </ul>
 
-        {/* GitHub CTA (edit if your repo differs) */}
-        <div className="text-center">
-          <Link
-            href="https://github.com/ryderlane/safe-to-surf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-          >
-            <GithubIcon className="w-5 h-5" />
-            View Code&nbsp;on&nbsp;GitHub
-          </Link>
-        </div>
-      </section>
+    </section>
 
       {/* ───────────────────────── OS Rewrite in C ───────────────────────── */}
       <section className="mb-16">
@@ -88,7 +77,8 @@ export default function ProjectsPage() {
 
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
-          <Image className="w-5 h-5 text-blue-600" /> Core&nbsp;Features
+          <ImageIcon className="w-5 h-5 text-blue-600" />
+ Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
@@ -153,7 +143,8 @@ export default function ProjectsPage() {
 
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
-          <Image className="w-5 h-5 text-blue-600" /> Core&nbsp;Features
+          <ImageIcon className="w-5 h-5 text-blue-600" />
+ Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
