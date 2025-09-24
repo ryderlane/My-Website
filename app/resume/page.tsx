@@ -11,7 +11,7 @@ export default function ResumePage() {
       </p>
 
       <a
-        href="/Ryder Lane Resume (4).pdf"
+        href="/Resume - Ryder Lane (1).pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
