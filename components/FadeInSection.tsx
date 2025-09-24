@@ -2,22 +2,28 @@
 
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function FadeInSection({ children }: { children: React.ReactNode }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
 
+  // Prevent first-paint flicker: don't start hidden on the initial SSR/CSR hydration
+  const hasHydrated = useRef(false);
+  const initialState = hasHydrated.current ? 'hidden' : false; // first render => false, later => 'hidden'
+
   useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
+    hasHydrated.current = true; // subsequent mounts can use 'hidden'
+  }, []);
+
+  useEffect(() => {
+    if (inView) controls.start('visible');
   }, [controls, inView]);
 
   return (
     <motion.div
       ref={ref}
-      initial="hidden"
+      initial={initialState}
       animate={controls}
       variants={{
         hidden: { opacity: 0, y: 20 },
