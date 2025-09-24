@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
           <ImageIcon className="w-5 h-5 text-blue-600" />
- Core&nbsp;Features
+          Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
@@ -49,18 +49,59 @@ export default function ProjectsPage() {
           <li>
             <code>Next.js&nbsp;14</code>, <code>React</code>, <code>Tailwind</code>, <code>Leaflet</code> (map), NOAA APIs.
           </li>
-          <li>
-             Fetch + transform NOAA station/point forecasts.
-          </li>
-          <li>
-             Saved spot preview with condition badges.
-          </li>
-          <li>
-             Interactive map with pins &amp; popovers.
-          </li>
+          <li>Fetch + transform NOAA station/point forecasts.</li>
+          <li>Saved spot preview with condition badges.</li>
+          <li>Interactive map with pins &amp; popovers.</li>
+        </ul>
+      </section>
+
+      {/* ───────────────────────── Internship Location Filter ───────────────────────── */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <Database className="w-5 h-5 text-blue-600" />
+          Internship&nbsp;Location&nbsp;Filter
+        </h2>
+
+        <p className="text-lg mb-6">
+          A tiny utility that converts a GitHub internship list (HTML table) into a clean CSV and lets you
+          filter roles by <strong>city/state</strong> (e.g., “Chicago”, “MA”, “Remote”). Great for quickly narrowing
+          Summer&nbsp;2026 internships by location.
+        </p>
+
+        {/* Features */}
+        <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
+          <ImageIcon className="w-5 h-5 text-blue-600" />
+          Core&nbsp;Features
+        </h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
+          <li>Reads raw HTML tables and outputs a structured CSV.</li>
+          <li>Interactive prompt to filter by any location substring.</li>
+          <li>Saves filtered results to <code>filtered_internships.csv</code>.</li>
         </ul>
 
-    </section>
+        {/* Tech */}
+        <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
+          <Database className="w-5 h-5 text-blue-600" />
+          Tech&nbsp;Stack
+        </h3>
+        <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
+          <li><code>Python</code>, <code>Pandas</code>, <code>lxml</code>, <code>html5lib</code>.</li>
+          <li>CLI script designed for quick local use.</li>
+        </ul>
+
+        {/* GitHub CTA */}
+        <div className="text-center">
+          <Link
+            href="https://github.com/ryderlane/internshipbot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+          >
+            <GithubIcon className="w-5 h-5" />
+            View&nbsp;Repo&nbsp;on&nbsp;GitHub
+          </Link>
+        </div>
+      </section>
 
       {/* ───────────────────────── OS Rewrite in C ───────────────────────── */}
       <section className="mb-16">
@@ -78,7 +119,7 @@ export default function ProjectsPage() {
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
           <ImageIcon className="w-5 h-5 text-blue-600" />
- Core&nbsp;Features
+          Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
@@ -144,7 +185,7 @@ export default function ProjectsPage() {
         {/* Features */}
         <h3 className="text-xl font-medium mb-2 flex items-center gap-2">
           <ImageIcon className="w-5 h-5 text-blue-600" />
- Core&nbsp;Features
+          Core&nbsp;Features
         </h3>
         <ul className="list-disc list-inside space-y-2 mb-6 ml-4">
           <li>
